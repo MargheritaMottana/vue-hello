@@ -9,15 +9,24 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <h1 id="app">
+    <div id="app" class="text-center p-5">
 
-        {{ message }}
+        <h1 class="pb-3">
+            {{ message }}
+        </h1>
 
-    </h1>
+        <div>
+            <img v-bind:src="imgsrc" :alt="message">
+        </div>
+
+    </div>
 
     <!-- Vue e js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
